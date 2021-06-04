@@ -20,7 +20,7 @@ import Foundation
 extension ApplicationConstants {
   static let Host = "dialogflow.googleapis.com"
   // TODO: Replace with your GCP PROJECT_ID
-  static let ProjectName = "your-project-identifier"
+  static let ProjectName = "chatbot-285016"
   static let SessionID = "001"
   static let SampleRate = 16000 //Sample rate (in Hertz) of the audio content sent in the query.
   static let tokenType = "Bearer "
@@ -54,8 +54,8 @@ extension ApplicationConstants {
   static let botKey = "Bot"
   static let tokenFetchingAlertTitle = "Alert"
   static let tokenFetchingAlertMessage = "Retrieving token ..."
-  static let queryTextFieldPlaceholder = "Type your intent"
-  static let dialogflowScreenTitle = "Dialogflow Sample"
+  static let queryTextFieldPlaceholder = "Enter text"
+  static let dialogflowScreenTitle = "Chatbot"
   static let moreButtonTitle = "More"
   static let sentimentScore = "Sentiment Score:"
   static let sentimentMagnitude = "Sentiment magnitude:"

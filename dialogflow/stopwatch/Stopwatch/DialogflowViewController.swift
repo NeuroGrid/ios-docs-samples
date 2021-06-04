@@ -83,7 +83,7 @@ class DialogflowViewController: UIViewController {
     intentTextField.isHidden = true
     intentTextField.backgroundColor = .white
     intentTextField.returnKeyType = .send
-    intentTextFieldController.placeholderText = "Type your intent"
+    intentTextFieldController.placeholderText = "Say something"
     intentTextField.delegate = self
     
     // Constraints
@@ -103,9 +103,11 @@ class DialogflowViewController: UIViewController {
                                      metrics: nil,
                                      views: [ "intentTF" : intentTextField]))
     NSLayoutConstraint.activate(constraints)
-    let colorScheme = ApplicationScheme.shared.colorScheme
-    MDCTextFieldColorThemer.applySemanticColorScheme(colorScheme,
-                                                     to: self.intentTextFieldController)
+//    let colorScheme = ApplicationScheme.shared.colorScheme
+    let containerScheme = MDCContainerScheme()
+    self.intentTextFieldController.applyTheme(withScheme: containerScheme)
+//    MDCTextFieldColorThemer.applySemanticColorScheme(colorScheme,
+//                                                     to: self.intentTextFieldController)
     
   }
   

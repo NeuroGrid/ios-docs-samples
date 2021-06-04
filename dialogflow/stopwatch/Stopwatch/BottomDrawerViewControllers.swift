@@ -62,7 +62,7 @@ class DrawerContentViewController: UITableViewController {
     let cell = tableView.dequeueReusableCell(withIdentifier: ApplicationConstants.tableViewCellID, for: indexPath)
     cell.textLabel?.text = "\(menuItems[indexPath.item].stringValue())"
     cell.tintColor = ApplicationScheme.shared.colorScheme.primaryColor
-    //cell.backgroundColor = colorScheme.surfaceColor
+    cell.backgroundColor = .brown
     print(cell.textLabel?.text ?? "")
     let defaults = UserDefaults.standard
     if let defaultItems = defaults.value(forKey: ApplicationConstants.selectedMenuItems) as? [Int],

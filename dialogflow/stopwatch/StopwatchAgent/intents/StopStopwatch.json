@@ -1,0 +1,29 @@
+{
+  "id": "21e2acea-1435-422b-ab54-974339a544b9",
+  "name": "StopStopwatch",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "stop",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Stopwatch stopped"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1547842918,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -16,6 +16,7 @@
 import UIKit
 import UserNotifications
 import Firebase
+import FirebaseCore
 import AuthLibrary
 
 @UIApplicationMain
